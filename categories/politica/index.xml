@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Politica on My New Hugo Site</title>
+    <link>https://datilu.github.io/categories/politica/</link>
+    <description>Recent content in Politica on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 10 May 2002 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://datilu.github.io/categories/politica/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>lula lixo</title>
+      <link>https://datilu.github.io/posts/lula-ladrao/</link>
+      <pubDate>Fri, 10 May 2002 00:00:00 +0000</pubDate>
+      <guid>https://datilu.github.io/posts/lula-ladrao/</guid>
+      <description>Lula, Lava Jato e o Limite entre Condenação Judicial e Julgamento Político&#xA;Luiz Inácio Lula da Silva foi investigado e processado no âmbito da Operação Lava Jato, principalmente em ações penais relacionadas a supostos benefícios indevidos envolvendo imóveis (casos do tríplex do Guarujá e do sítio de Atibaia).&#xA;Condenações iniciais: Lula foi condenado em primeira e segunda instância nesses processos, o que levou à sua prisão em 2018, após confirmação em segunda instância (prática então admitida pelo STF).</description>
+    </item>
+  </channel>
+</rss>
