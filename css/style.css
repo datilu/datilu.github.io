@@ -1,0 +1,233 @@
+/* =========================
+    Reset / global
+   ========================= */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* =========================
+    Top menu
+   ========================= */
+#menu {
+    background-color: #001d3d;
+    width: 100%;
+    height: 80px;
+    padding-top: 15px;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.3);
+    position:fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+}
+
+/* link do título */
+
+#menu a { 
+    text-decoration: none;
+    color: white;
+}
+
+#menu h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1;
+}
+
+/* =========================
+    Conteúdo principal (#corpo)
+   ========================= */
+#corpo {
+    width: 60%;
+    max-width: 1200px;
+    margin: 0 auto;               
+    margin-top: 0;
+    border-radius: 0 0 10px 10px;
+    box-shadow:
+        -6px 0 10px -6px rgba(0,0,0,0.1),
+        6px 0 10px -6px rgba(0,0,0,0.1);
+    position: relative;
+    background: #fff;
+}
+
+/* espaçamento interno */
+#corpo2 {
+    padding: 20px;
+}
+
+/* =========================
+    Cards (lista de matérias)
+   ========================= */
+.card {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;             
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px solid #e8e5e5;
+    max-width: 100%;
+}
+
+.card > * {
+    min-width: 0;
+}
+
+/* imagem da capa */
+.card img,
+.capa {
+    display: block;
+    width: 300px;           /* largura fixa da miniatura */
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: box-shadow 0.3s ease, transform 0.15s ease;
+}
+
+.card img:hover,
+.capa:hover {
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+    Caixa de texto do card
+   ========================= */
+.text-box-card {
+    flex: 1 1 0%;
+    min-width: 0;         
+    padding-left: 10px;
+    color: #666;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+
+}
+
+.text-box-card * {
+    max-width: 100%;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+.text-box-card h2 {
+    margin: 0 0 8px 0;
+    font-size: 1.25rem;
+    color: #000;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    white-space: normal;
+}
+
+.text-box-card p {
+    margin: 0 0 8px 0;
+    line-height: 1.4;
+}
+
+.text-box-card a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* =========================
+    Data / estilo pequeno
+   ========================= */
+.data {
+    color: #c1121f;
+    font-size: 0.9rem;
+}
+
+/* =========================
+    Responsividade
+   ========================= */
+@media (max-width: 1080px) {
+    #corpo {
+        width: 90%;
+        max-width: 1000px;
+    }
+
+    .botão-menu, .botao-menu {
+        width: 80%;
+    }
+
+    /* empilha cards em mobile */
+    .card {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+        display: flex;
+        
+    }
+
+    .card img,
+    .capa {
+        width: 100%;
+        max-height: 300px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .text-box-card {
+        padding-left: 0;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+}
+
+/* =========================
+    Ajustes pontuais / utilitários
+   ========================= */
+a { color: inherit; }
+.text-box-card,
+.text-box-card * {
+    white-space: normal;
+}
+
+/* baner */
+.baner{
+    background-color: #003566;
+}
+
+.baner-conteudo{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-left: -40%;
+    left: 50%;
+    min-height: 250px;
+    padding-top: 25px;
+}
+
+.icone-detetive{
+    width: 60px;
+    height:min-content;
+    margin-right: 50px;
+}
+
+h2{
+    font-size: 20px;
+    overflow-wrap: break-word;
+    color: white;
+}
