@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on My New Hugo Site</title>
-    <link>https://datilu.github.io/site/posts/</link>
+    <link>https://datilu.github.io/posts/</link>
     <description>Recent content in Posts on My New Hugo Site</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 10 May 2002 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://datilu.github.io/site/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://datilu.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>lula lixo</title>
-      <link>https://datilu.github.io/site/posts/lula-ladrao/</link>
+      <link>https://datilu.github.io/posts/lula-ladrao/</link>
       <pubDate>Fri, 10 May 2002 00:00:00 +0000</pubDate>
-      <guid>https://datilu.github.io/site/posts/lula-ladrao/</guid>
+      <guid>https://datilu.github.io/posts/lula-ladrao/</guid>
       <description>Lula, Lava Jato e o Limite entre Condenação Judicial e Julgamento Político&#xA;Luiz Inácio Lula da Silva foi investigado e processado no âmbito da Operação Lava Jato, principalmente em ações penais relacionadas a supostos benefícios indevidos envolvendo imóveis (casos do tríplex do Guarujá e do sítio de Atibaia).&#xA;Condenações iniciais: Lula foi condenado em primeira e segunda instância nesses processos, o que levou à sua prisão em 2018, após confirmação em segunda instância (prática então admitida pelo STF).</description>
     </item>
     <item>
       <title>Renan Santos é foda</title>
-      <link>https://datilu.github.io/site/posts/renan-santos/</link>
+      <link>https://datilu.github.io/posts/renan-santos/</link>
       <pubDate>Thu, 09 May 2002 00:00:00 +0000</pubDate>
-      <guid>https://datilu.github.io/site/posts/renan-santos/</guid>
+      <guid>https://datilu.github.io/posts/renan-santos/</guid>
       <description>Renan Santos e a Construção de uma Militância Política Profissional no Brasil Renan Santos se destaca como uma das figuras mais relevantes do Movimento Brasil Livre (MBL) por um motivo simples: ele trata política como organização, estratégia e longo prazo, não como improviso emocional. Em um ambiente político marcado por populismo raso, personalismo e militância desorganizada, Renan atua como operador político no sentido clássico do termo.&#xA;Seu principal mérito está na capacidade de estruturar movimento.</description>
     </item>
   </channel>
