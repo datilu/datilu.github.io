@@ -2,20 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.org/posts/lula-ladrao/</loc>
+    <loc>https://datilu.github.io/site/posts/lula-ladrao/</loc>
     <lastmod>2002-05-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/</loc>
+    <loc>https://datilu.github.io/site/</loc>
     <lastmod>2002-05-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/posts/</loc>
+    <loc>https://datilu.github.io/site/posts/</loc>
     <lastmod>2002-05-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/posts/renan-santos/</loc>
+    <loc>https://datilu.github.io/site/posts/renan-santos/</loc>
     <lastmod>2002-05-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/categories/</loc>
+    <loc>https://datilu.github.io/site/categories/</loc>
   </url><url>
-    <loc>https://example.org/tags/</loc>
+    <loc>https://datilu.github.io/site/tags/</loc>
   </url>
 </urlset>
