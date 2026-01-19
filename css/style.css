@@ -201,9 +201,8 @@ h2{
 /* melhora visual e evita inline a maioria das coisas */
 #results {
     position: absolute;
-    top: 100%;            /* logo abaixo do input */
-    left: 50%;
-    transform: translateX(-50%);
+    top: 100%;
+    right: 20%;
     z-index: 999;
     display: flex;
     flex-direction: column;
@@ -214,7 +213,6 @@ h2{
     border-radius: 10px;
     box-shadow: 0px 0px 20px rgba(0,0,0,0.6);
 }
-
 
 .search-card {
     width: 300px;
@@ -328,6 +326,22 @@ h2{
     .search-wrapper {
         padding: 10px 5% 10px 10px;
     }
+
+    #results {
+    position: absolute;
+    top: 100%;
+    right: 5%;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-height: 420px;
+    overflow-y: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.6);
+}
+    
 }
 
 
