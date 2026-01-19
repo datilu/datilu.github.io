@@ -231,3 +231,76 @@ h2{
     overflow-wrap: break-word;
     color: white;
 }
+
+/* melhora visual e evita inline a maioria das coisas */
+#results {
+    position: absolute;
+    top: 100%;            /* logo abaixo do input */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-height: 420px;
+    overflow-y: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.6);
+}
+
+
+.search-card {
+    width: 300px;
+    height: 140px;
+    margin: 10px 10px 0px 10px;
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.search-img { 
+    width:100%; 
+    height:100%; 
+    object-fit:cover; 
+    display:block; 
+}
+.search-overlay {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+
+    background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.95) 0%,
+    rgba(0,0,0,0.6) 40%,
+    rgba(0,0,0,0.0) 70%
+    );
+}
+
+.search-card a {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    padding: 10px;
+    text-align: center;
+
+    text-decoration: none;
+    color: #fff;
+    z-index: 2;
+}
+
+.search-card .search-title { color:#fff; 
+    font-weight:600; 
+    padding:10px; 
+    text-shadow:0 1px 2px rgba(0,0,0,0.6);
+}
+
+.search-wrapper {
+    position: relative;   /* âncora do absolute */
+    background-color: white;
+}
