@@ -232,7 +232,7 @@ h2{
     color: white;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1080px) {
         .baner{
         background-color: #003566;
     }
