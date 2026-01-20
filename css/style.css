@@ -32,7 +32,7 @@ body {
     position:fixed;
     top: 0px;
     left: 0px;
-    z-index: 10;
+    z-index: 999;
 }
 
 /* link do título */
@@ -131,7 +131,7 @@ body {
 
 .text-box-card h2 {
     margin: 0 0 8px 0;
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: #000;
     overflow-wrap: anywhere;
     word-break: break-word;
@@ -170,6 +170,7 @@ a { color: inherit; }
 /* baner */
 .baner{
     background-color: #003566;
+    z-index: 999;
 }
 
 .baner-conteudo{
@@ -182,6 +183,10 @@ a { color: inherit; }
     left: 50%;
     min-height: 130px;
     padding-top: 25px;
+}
+
+.baner-conteudo h2{
+    font-size: 18px;
 }
 
 .icone-detetive{
@@ -203,7 +208,7 @@ h2{
     position: absolute;
     top: 100%;
     right: 20%;
-    z-index: 999;
+    z-index: 998;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -266,7 +271,7 @@ h2{
 
 .search-wrapper {
     top: 80px;
-    position: sticky;   /* âncora do absolute */
+    position: sticky;
     background-color: #ffc300;
     display: flex;
     justify-content: right;
@@ -331,7 +336,7 @@ h2{
     position: absolute;
     top: 100%;
     right: 5%;
-    z-index: 999;
+    z-index: 998;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -342,6 +347,9 @@ h2{
     box-shadow: 0px 0px 20px rgba(0,0,0,0.6);
 }
     
+.baner-conteudo h2{
+    font-size: 16px;
+}
 }
 
 
@@ -360,7 +368,7 @@ h2{
         width: 80%;
         margin-left: -40%;
         left: 50%;
-        min-height: 250px;
+        min-height: 12%;
         padding-top: 25px;
     }
 
