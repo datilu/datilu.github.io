@@ -5,6 +5,10 @@ body{
     font-size: 22px;
 }
 
+#titulo{
+    font-family: 'Times New Roman', Times, serif;
+}
+
 .titulo{
     background-color: #0d1b2a;
     color: white;
