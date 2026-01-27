@@ -1,15 +1,20 @@
 body{
     margin: 0px;
     padding: 0px;
+    background-color: #003566;
 }
 
 .corpo{
-    width: 50%;
+    margin-top: 10px;
+    top: 40px;
+    width: 98%;
     gap: 20px;
-    padding: 20px 0 0 0;
+    padding: 40px 0 40px 0;
     display: flex;
     align-items: center;
     flex-direction: column;
+    background-color: white;
+    border-radius: 25px;
 }
 
 .corpo-wrap{
@@ -19,13 +24,15 @@ body{
 }
 
 .titulo{
+    padding: 10px;
     font-size: 50px;
     text-align: center;
-    background-color: #0d1b2a;
-    color: white;
     height: 70px;
     line-height: 70px;
     font-family: 'Times New Roman', Times, serif;
+    /* text-shadow: 4px 4px 0 #404040; */
+    display: flex;
+    justify-content: center;
 }
 
 .titulo a{
@@ -33,27 +40,58 @@ body{
     color: white;
 }
 
+.titulo img{
+    width: 70px;
+    margin-bottom: -15px;
+}
+
 .caixa-barra-pesquisa{
     display: flex;
     justify-content: center;
     padding: 5px;
-    background-color: #415a77;
 }
 
 .caixa-barra-pesquisa input{
-    border-radius: 3px;
-    border: none;
+    border-radius: 6px;
+    border: solid 3px #404040;
     width: 300px;
 }
 
-/* card */
+.caixa-barra-pesquisa input:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+
+
+/* card background*/
 .card{
-    box-shadow: 0px 0px 3px rgb(0,0,0,0.1);
-    width: 100%;
+    box-shadow: 0px 0px 6px rgb(0,0,0,0.5);
+    width: 70%;
     border-radius: 15px;
     overflow: hidden;
     background: white;
+    transition: all 0.2s ease-out;
+    max-width: 800px;
 }
+.card:nth-child(4n+1):hover {
+    background: #faeef0;
+}
+
+.card:nth-child(4n+2):hover {
+    background: #fdf6f2;
+}
+
+.card:nth-child(4n+3):hover {
+    background: #f7f6f3;
+}
+
+.card:nth-child(4n+4):hover {
+    background: #eef3ef;
+}
+
+
+/* card */
 
 .capa-box{
     padding: 30px;
@@ -93,21 +131,10 @@ body{
     color: #c1121f;
 }
 
-.corpo hr {
-    width: calc(100% - 70px); /* ou 100% se quiser ocupar tudo */
-    border: none;
-    height: 2px;
-    background-color: #0d1b2a;
-    margin: 20px 0;
-    display: none;
-}
-
-
-
 @media (max-width: 1000px){
 
     .corpo{
-        width: 100%;
+        width: 98%;
     }
     
     .capa{
@@ -117,15 +144,29 @@ body{
     .card{
         width: 100%;
         box-shadow: none;
+        border-radius: 0;
     }
 
-    .corpo hr {
-        display: block;
+    .card:nth-child(4n+1):hover {
+        background: white;
+    }
+
+    .card:nth-child(4n+2):hover {
+        background: white;
+    }
+
+    .card:nth-child(4n+3):hover {
+        background: white;
+    }
+
+    .card:nth-child(4n+4):hover {
+        background: white;
     }
 }
 
 footer{
     display: flex;
     justify-content: center;
+    color: white;
 }
 

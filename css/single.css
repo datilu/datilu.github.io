@@ -2,7 +2,11 @@ body{
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
+    font-size: 16px;
+    background-color: #003566;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 p { text-indent: 2em; 
@@ -14,9 +18,8 @@ p { text-indent: 2em;
 }
 
 .titulo{
-    background-color: #0d1b2a;
     color: white;
-    margin-bottom: 20px;
+    padding: 10px;
 }
 
 .titulo a{
@@ -39,38 +42,50 @@ p { text-indent: 2em;
 .corpo{
     display: flex;
     justify-content: center;
+    background-color: white;
+    width: 97%;
+    border-radius: 25px;
 }
 
 .cabecalho{
-    width: 60%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
 }
 
 .capa{
     box-sizing: border-box;
     width: 100%;
     border-radius: 10px;
+    max-width: 700px;
 }
 
 .data{
     color: #c1121f;
+    text-indent: 0;
+}
+
+.categoria{
+    text-indent: 0;
 }
 
 .conteudo{
-    font-size: 22px;
+    font-size: 18px;
 }
 
 @media (max-width: 600px){
-    .cabecalho{
-        width: 100%;
-        padding: 0 20px 20px 20px;
-    }
     .conteudo{ 
         font-size: 16px;
     }
 }
 
-footer{
+footer p{
     text-align: center;
+    font-size: 14px;
+    text-indent: 0;
+    color: white;
 }
 
 /* chat */
