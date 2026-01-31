@@ -1,11 +1,7 @@
 /* 1. Cria o efeito de surgimento */
 @keyframes entrarSuave {
-    from { 
-        opacity: 0; 
-    }
-    to { 
-        opacity: 1; 
-    }
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 /* 2. Aplica ao body */
@@ -16,11 +12,6 @@ body {
     background-color: #003566;
 }
 
-h2{
-    padding-left: 10px;
-    border-left: solid 6px #fba211;
-}
-
 .corpo{
     gap: 20px;
     display: grid;
@@ -29,12 +20,7 @@ h2{
     border-radius: 25px;
     padding: 30px 4% 30px 4%;
     gap: 30px;
-}
-
-.corpo-wrap{
-display: flex;
-width: 100%;
-padding: 0 2% 0 2%;
+    width: 100%;
 }
 
 .titulo{
@@ -47,16 +33,6 @@ padding: 0 2% 0 2%;
     /* text-shadow: 4px 4px 0 #404040; */
     display: flex;
     justify-content: center;
-}
-
-.titulo a{
-    text-decoration: none;
-    color: white;
-}
-
-.titulo img{
-    width: 70px;
-    margin-bottom: -15px;
 }
 
 .caixa-barra-pesquisa{
@@ -72,12 +48,11 @@ padding: 0 2% 0 2%;
     padding: 17px;
 }
 
-.caixa-barra-pesquisa input:focus{
-    outline: none;
-    box-shadow: none;
-}
-
-
+h2{padding-left: 10px;border-left: solid 6px #fba211;}
+.corpo-wrap{display: flex; width: 100%; padding: 0 2%;}
+.titulo a{text-decoration: none; color: white;}
+.titulo img{width: 70px; margin-bottom: -15px;}
+.caixa-barra-pesquisa input:focus{outline: none; box-shadow: none;}
 
 /* card background*/
 .card{  
@@ -92,25 +67,6 @@ padding: 0 2% 0 2%;
     height: 300px;
     overflow: hidden;
 }
-.card:nth-child(4n+1):hover {
-    background: #faeef0;
-}
-
-.card:nth-child(4n+2):hover {
-    background: #fdf6f2;
-}
-
-.card:nth-child(4n+3):hover {
-    background: #f7f6f3;
-}
-
-.card:nth-child(4n+4):hover {
-    background: #eef3ef;
-}
-
-
-/* card */
-
 .capa-box{
     height: 300px;
     box-sizing: border-box;
@@ -150,9 +106,12 @@ padding: 0 2% 0 2%;
     line-clamp: 4;
 }
 
-.data{
-    color: #c1121f;
-}
+.data{color: #c1121f;}
+
+.card:nth-child(4n+1):hover {background: #faeef0;}
+.card:nth-child(4n+2):hover {background: #fdf6f2;}
+.card:nth-child(4n+3):hover {background: #f7f6f3;}
+.card:nth-child(4n+4):hover {background: #eef3ef;}
 
 /* footer */
 
@@ -165,23 +124,15 @@ footer{
 }
 
 /* todo o conteudo incluindo o menu */
-
-.meio{
-    display: flex;
-}
-
-.menu img{
-    cursor: pointer;
-    width: 50px;
-    
-}
-
 .menu {
     padding: 30px 0 0 30px;
     position: sticky;
     top: 0px;
     align-self: flex-start;
 }
+
+.meio{display: flex;}
+.menu img{cursor: pointer; width: 50px;}
 
 /* estado fechado */
 .menu-content {
@@ -194,18 +145,36 @@ footer{
 }
 
 /* estado aberto */
-.menu.open .menu-content {
-    max-width: 200px;
-    opacity: 1;
+.menu.open .menu-content {max-width: 200px; opacity: 1;}
+.menu-content {color: white;}
+
+
+/* cadastro de email no site para envio de novos posts */
+
+.email{
+    padding: 5px;
+    background-color: #414b55;
+    color: white;
+    border-radius: 10px;
+    font-weight: 700;
+    border: 2px solid #404040;
 }
 
 
-.menu-content {
-  color: white;
+.botao{
+    padding: 5px;
+    font-weight: 700;
+    color: white;
+    background-color: #970a14;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
+
+.email:focus{outline: none; box-shadow: none;}
+/* variaveis para dispositivos moveis */
 
 @media (max-width: 1100px){
-
     .corpo{
         display: flex;
         flex-direction: column;
@@ -214,14 +183,9 @@ footer{
         padding: 0;
     }
 
-    .corpo-wrap{
-        padding: 0 2%;
-    }
+    .corpo-wrap{padding: 0 2%;}
 
-    .capa-box{
-        width: 100%;
-        padding: 0;
-    }
+    .capa-box{width: 100%; padding: 0;}
 
     .capa{
         width: 100%;
@@ -238,50 +202,10 @@ footer{
         height: auto;
     }
 
-    .card:nth-child(4n+1):hover {
-        background: none;
-    }
-
-    .card:nth-child(4n+2):hover {
-        background: none;
-    }
-
-    .card:nth-child(4n+3):hover {
-        background: none;
-    }
-
-    .card:nth-child(4n+4):hover {
-        background: none;
-    }
-
-    .menu img{
-    width: 20px;
-    }
-    .menu {
-    padding: 10px 0 0 10px;
-    }
-}
-
-.email{
-    padding: 5px;
-    background-color: #414b55;
-    color: white;
-    border-radius: 10px;
-    font-weight: 700;
-    border: 2px solid #404040;
-}
-
-.email:focus{
-    outline: none;
-    box-shadow: none;
-}
-
-.botao{
-    padding: 5px;
-    font-weight: 700;
-    color: white;
-    background-color: #970a14;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    .card:nth-child(4n+1):hover {background: none;}
+    .card:nth-child(4n+2):hover {background: none;}
+    .card:nth-child(4n+3):hover {background: none;}
+    .card:nth-child(4n+4):hover {background: none;}
+    .menu img{width: 20px;}
+    .menu {padding: 10px 0 0 10px;}
 }
