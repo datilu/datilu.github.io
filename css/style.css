@@ -140,7 +140,7 @@ footer{
     opacity: 0;
     overflow: hidden;
     white-space: nowrap;
-    transition: max-width 0.4s ease, opacity 0.3s ease;
+    transition: max-width 1s ease, opacity 0.3s ease;
     color: white;
 }
 
