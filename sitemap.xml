@@ -17,6 +17,23 @@
     <loc>https://example.org/posts/</loc>
     <lastmod>2026-01-25T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://example.org/posts/teste-copy-2/</loc>
+    <lastmod>2026-01-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://example.org/posts/teste-copy-3/</loc>
+    <lastmod>2026-01-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://example.org/posts/teste-copy-4/</loc>
+    <lastmod>2026-01-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://example.org/posts/teste-copy/</loc>
+    <lastmod>2026-01-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://example.org/posts/teste/</loc>
+    <lastmod>2026-01-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://example.org/sobre/</loc>
+  </url><url>
     <loc>https://example.org/tags/</loc>
   </url><url>
     <loc>https://example.org/unsubscribe/</loc>
