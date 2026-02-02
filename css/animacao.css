@@ -14,7 +14,7 @@
 }
 
 .cenario{
-    height: 5vh;
+    height: 7vh;
     width: 100vw;
     top: 0;
     position: sticky;
@@ -25,10 +25,10 @@
 
 @keyframes andar {
     from{
-        background-position: -112px -40px;
+        background-position: -112px -20px;
     }
     to{
-        background-position: -2800px -40px;
+        background-position: -2800px -20px;
     }
 }
 

@@ -64,7 +64,7 @@ body {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    top: 5vh;
+    top: 7vh;
     position: sticky;
     background-color: #003566;
     align-items: center;
@@ -154,7 +154,7 @@ footer{
 .menu {
     padding: 1vw;
     position: sticky;
-    top: 15vh;
+    top: 17vh;
     align-self: flex-start;
 }
 
@@ -259,7 +259,7 @@ footer{
     .titulo img{padding-left: 0;}
     .top-box{
         flex-direction: column;
-        height: 22vh;
+        height: 20vh;
         align-items: center;
         justify-content: center;
         padding-bottom: 3vh;
