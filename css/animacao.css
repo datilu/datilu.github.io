@@ -1,0 +1,56 @@
+.chapeuzinho{
+    top: -20px;
+    position: relative;
+    left: 100%;
+    z-index: 99;
+    width: 112px;
+    height: 100px;
+    background-image: url('/images/chapelzinho.png');
+    background-repeat: no-repeat;
+    animation: 
+    andar 0.8s steps(24) infinite,
+    mover 16s linear,
+    aparecer 0.8 ease-in;
+}
+
+.cenario{
+    height: 5vh;
+    width: 100vw;
+    top: 0;
+    position: sticky;
+    z-index: 100;
+    background-color: #003566;
+    overflow: hidden;
+}
+
+@keyframes andar {
+    from{
+        background-position: -112px -40px;
+    }
+    to{
+        background-position: -2800px -40px;
+    }
+}
+
+@keyframes mover {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-110vw);
+    }
+}
+
+@keyframes aparecer {
+    0%{
+        filter: opacity(0);
+    }5%{
+        filter: opacity(100%);    
+    }95%{
+        filter: opacity(100%);    
+    }100%{
+        filter: opacity(0);
+    }
+}
+
+

@@ -1,4 +1,5 @@
 /* 1. Cria o efeito de surgimento */
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 @keyframes entrarSuave {
     from {opacity: 0;}
     to {opacity: 1;}
@@ -10,65 +11,85 @@ body {
     margin: 0px;
     padding: 0px;
     background-color: #003566;
+    overflow-x: hidden;
+    max-width: 100%;
+    position: relative;
 }
 
 .corpo{
-    gap: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background-color: white;
-    border-radius: 25px;
-    padding: 30px 4% 30px 4%;
-    gap: 30px;
+    border-radius: 15px;
+    padding: 1vh;
+    gap: 1vh;
     width: 100%;
 }
-.corpo-wrap{display: flex; width: 100%; padding: 0 2% 0 10px;}
+.corpo-wrap{display: flex; width: 100%; padding: 0 2vw;}
 
 .titulo{
-    padding: 10px;
-    font-size: 50px;
+    height: 100%;
+    padding: 1vh;
+    font-size: 8vh;
     text-align: center;
-    height: 70px;
     line-height: 70px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     /* text-shadow: 4px 4px 0 #404040; */
     display: flex;
+    align-items: center;
     justify-content: center;
+    flex-direction: row;
+    flex: 1;
 }
 
 .caixa-barra-pesquisa{
+    width: 100%;
+    max-width: 80vw;
     display: flex;
-    justify-content: center;
-    padding: 5px;
+    align-items: center;
+    padding: 1vh 2vw;
 }
 
 .caixa-barra-pesquisa input{
     border-radius: 6px;
     border: solid 3px #404040;
-    width: 300px;
-    padding: 17px;
+    width: 100%;
+    height: 6vh;
+    font-size: 2vh;
 }
 
-h2{padding-left: 10px;border-left: solid 6px #fba211;}
-.titulo a{text-decoration: none; color: white;}
-.titulo img{width: 70px; margin-bottom: -15px;}
+.top-box{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    top: 5vh;
+    position: sticky;
+    background-color: #003566;
+    align-items: center;
+}
+
+.top-box a{text-decoration: none;}
+h2{padding-left: 1vw;border-left: solid 1vh #fba211;}
+.titulo p{ display: flex; color: white; margin: 0;}
+.titulo img{padding-left: 2vw; height: 6vh;}
 .caixa-barra-pesquisa input:focus{outline: none; box-shadow: none;}
 
 /* card background*/
 .card{  
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    box-shadow: 0px 0px 6px rgb(0,0,0,0.5);
+    /* grid-template-rows: 1fr; */
+    /* box-shadow: 0px 0px 6px rgb(0,0,0,0.5); */
+    border:1px solid #aaafb3;
     width: 100%;
     border-radius: 15px;
     overflow: hidden;
     transition: all 0.2s ease-in-out;
-    height: 300px;
-    overflow: hidden;
 }
 .capa-box{
-    height: 300px;
+    height: 100%;
     box-sizing: border-box;
     object-fit: contain;
 }
@@ -82,31 +103,36 @@ h2{padding-left: 10px;border-left: solid 6px #fba211;}
     height: 100%;
 }
 
+
+
 .card a{
     text-decoration: none;
     color: black;
-    font-size: 18px;
+    font-size: 1.2rem;
     cursor: pointer;
 }
 
 .text-box-card{ 
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     color: #495057;
     box-sizing: border-box;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 1vw;
+    padding-right: 1vw;
 }
 
 .description{
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 4;
-    line-clamp: 4;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
 }
 
-.data{color: #c1121f;}
+.data{color: #c1121f; margin-top: auto;}
 
 .card:nth-child(4n+1):hover {background: #faeef0;}
 .card:nth-child(4n+2):hover {background: #fdf6f2;}
@@ -120,19 +146,20 @@ footer{
     flex-direction: column;
     color: white;
     align-items: center;
-    padding: 40px 0 10px 0;
+    padding: 2vh 0 1vh 0;
+    font-size: 1rem;
 }
 
 /* todo o conteudo incluindo o menu */
 .menu {
-    padding: 30px 0 0 10px;
+    padding: 1vw;
     position: sticky;
-    top: 0px;
+    top: 15vh;
     align-self: flex-start;
 }
 
 .meio{display: flex;}
-.menu img{cursor: pointer; width: 50px;}
+.menu img{cursor: pointer; width: 3vw;}
 
 /* estado fechado */
 .menu-content {
@@ -143,26 +170,41 @@ footer{
     transition: max-width 1s ease, opacity 0.3s ease;
     color: white;
 }
+.menu-content a{
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+}
 
 /* estado aberto */
 .menu.open .menu-content {max-width: 200px; opacity: 1;}
 .menu-content {color: white;}
 
+.menu-btn{
+    padding-bottom: 2vh;
+}
+
 
 /* cadastro de email no site para envio de novos posts */
 
 .email{
-    padding: 5px;
+    padding: 1vh;
     background-color: #414b55;
     color: white;
     border-radius: 10px;
     font-weight: 700;
     border: 2px solid #404040;
+    font-size: 2vh;
 }
 
 
 .botao{
-    padding: 5px;
+    font-size: 2vh;
+    padding: 1vh;
     font-weight: 700;
     color: white;
     background-color: #970a14;
@@ -175,6 +217,10 @@ footer{
 /* variaveis para dispositivos moveis */
 
 @media (max-width: 1100px){
+    .titulo {
+        font-size: 8vw;
+    }
+
     .corpo{
         display: flex;
         flex-direction: column;
@@ -183,14 +229,15 @@ footer{
         padding: 0;
     }
 
-    .corpo-wrap{padding: 0 2%;}
+    .corpo-wrap{padding: 0 2vw 0 0;}
 
     .capa-box{width: 100%; padding: 0;}
 
     .capa{
+        padding: 10px;
         width: 100%;
         aspect-ratio: 16/9;
-        border-radius: 15px 15px 0 0;
+        border-radius: 15px;
     }
 
     .card{
@@ -200,12 +247,21 @@ footer{
         flex-direction: column;
         align-items: center;
         height: auto;
+        border: none;
     }
 
     .card:nth-child(4n+1):hover {background: none;}
     .card:nth-child(4n+2):hover {background: none;}
     .card:nth-child(4n+3):hover {background: none;}
     .card:nth-child(4n+4):hover {background: none;}
-    .menu img{width: 20px;}
-    .menu {padding: 10px 0 0 10px;}
+    .menu img{width: 40px;}
+    .menu {top: 30vh;}
+    .titulo img{padding-left: 0;}
+    .top-box{
+        flex-direction: column;
+        height: 22vh;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 3vh;
+    }
 }
