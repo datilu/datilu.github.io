@@ -13,6 +13,7 @@
     if (menuBtn && menu) {
       menuBtn.addEventListener('click', () => {
         menu.classList.toggle('open');
+        menuBtn.setAttribute('aria-expanded', menu.classList.contains('open'));
         dbg('menu toggled, open=', menu.classList.contains('open'));
       });
       dbg('menu listener registrado');

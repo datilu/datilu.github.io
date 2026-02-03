@@ -10,6 +10,7 @@
   <title>DATILU</title>
   </head>
   <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
     
     <div class="cenario"><div class="chapeuzinho"></div></div>
     
@@ -18,18 +19,23 @@
       <a href="/"><div class="titulo"><img src="images/detetive.png" alt="" style="padding-right: 10px;"><p>DATILU.com</p></div></a>
       
       
-      <div class="caixa-barra-pesquisa"><input type="search" id="pesquisa" placeholder="Pesquisar..."></div>
+      <div class="caixa-barra-pesquisa">
+        <label class="sr-only" for="pesquisa">Pesquisar no site</label>
+        <input type="search" id="pesquisa" placeholder="Pesquisar...">
+      </div>
     </div>
     
     
-    <div id="results"></div>
+    <div id="results" role="listbox" aria-label="Resultados da pesquisa"></div>
     
     <div class="meio">
       
     <div class="menu">
-        <img src="./images/icone-menu.png" class="menu-btn" alt="Abrir menu">
+        <button class="menu-btn" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-links">
+          <img src="./images/icone-menu.png" alt="" aria-hidden="true">
+        </button>
 
-        <div class="menu-content">
+        <div class="menu-content" id="menu-links">
         <a href="/loja/"><img src="images/carrinho.png" alt=""><div class="opc-menu-box">LOJA</div></a>
         <a href="/sobre/"><img src="images/sobre.png" alt=""><div class="opc-menu-box">SOBRE</div></a>
         </div>
@@ -37,7 +43,7 @@
 
 
       
-      <div class="corpo-wrap">
+      <main class="corpo-wrap" id="conteudo">
         <div class="corpo">
           
             <article class="card">
@@ -185,7 +191,7 @@
             </article>
             
           </div>
-      </div>
+      </main>
     </div>
 
     
